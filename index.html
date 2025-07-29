@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaming Platform</title>
+    <link rel="stylesheet" <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img src="logo.png" alt="Logomarca" class="logo" />
+
+        <nav>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Bombando</a></li>
+            <li><a href="#">Minha Lista</a></li>
+            <li><a href="#">Navegar por Idiomas</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <a href="#" class="icon" title="Pesquisar">
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="#">Infantil</a>
+        <a href="#" class="icon" title="Notificações">
+          <i class="fas fa-bell"></i>
+        </a>
+        <a href="#" title="Menu do usuário">
+          <img src="user-avatar.png" alt="Usuário" class="user-menu" />
+        </a>
+      </div>
+    </header>
+    <div class="netflix-style">
+      <!-- Texto existente (igual ao anterior) -->
+      <div class="stranger-things-text">
+        <div class="serie-label">SÉRIE</div>
+        <h1>STRANGER THINGS</h1>
+        <div class="serie-details">
+          2016 | A16 | 4 temporadas | Ficção científica
+        </div>
+        <p class="serie-synopsis">
+          Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o
+          que encontram são segredos, forças sobrenaturais e uma menina.
+        </p>
+        <div class="serie-credits">
+          <div>
+            <span class="credit-label">Estrelando:</span> Winona Ryder, David
+            Harbour, Millie Bobby Brown
+          </div>
+          <div>
+            <span class="credit-label">Criação:</span> The Duffer Brothers
+          </div>
+        </div>
+      </div>
+
+      <!-- Novos botões Netflix -->
+      <div class="netflix-buttons">
+        <button class="netflix-play">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 3L19 12L5 21V3Z"
+              fill="white"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+          Reproduzir
+        </button>
+
+        <button class="netflix-more-info">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 8V12V8ZM12 16H12.01H12ZM12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          Mais informações
+        </button>
+
+        <button class="netflix-search">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M21 21L16.65 16.65"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <style>
+      /* Estilos anteriores (mantidos intactos) */
+      .stranger-things-text {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        color: white;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        width: 40%;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Novos estilos para os botões */
+      .netflix-buttons {
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .netflix-play,
+      .netflix-more-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 25px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .netflix-play {
+        background-color: #e50914;
+        color: white;
+        border: none;
+      }
+
+      .netflix-play:hover {
+        background-color: #f40612;
+      }
+
+      .netflix-more-info {
+        background-color: rgba(109, 109, 110, 0.7);
+        color: white;
+        border: none;
+      }
+
+      .netflix-more-info:hover {
+        background-color: rgba(109, 109, 110, 0.4);
+      }
+
+      .netflix-search {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+        padding: 8px;
+      }
+
+      .netflix-search svg {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+    <main></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
